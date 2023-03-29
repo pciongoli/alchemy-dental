@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "../styles/ContactForm.css";
+
 const Contact = () => {
    const [formValues, setFormValues] = useState({
       name: "",
@@ -18,11 +19,11 @@ const Contact = () => {
 
       // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual EmailJS values
       emailjs
-         .send(
-            "YOUR_SERVICE_ID",
-            "YOUR_TEMPLATE_ID",
-            formValues,
-            "YOUR_USER_ID"
+         .sendForm(
+            "service_u8bu1mc",
+            "template_y65f7q8",
+            event.target,
+            "VQFqqrGih_CKw1-x6"
          )
          .then((result) => {
             alert("Message sent successfully!");

@@ -26,26 +26,38 @@ const Services = () => {
                />
             </Col>
          </Row>
-         <ul>
-            <li>
-               <Link to="/gallery">Crowns</Link>
-            </li>
-            <li>
-               <Link to="/gallery">Bridges</Link>
-            </li>
-            <li>
-               <Link to="/gallery">Dentures</Link>
-            </li>
-            <li>
-               <Link to="/gallery">Retainers</Link>
-            </li>
-            <li>
-               <Link to="/gallery">Veneers</Link>
-            </li>
-            <li>
-               <Link to="/gallery">Cosmetic Dentistry</Link>
-            </li>
-         </ul>
+         <Row>
+            <Col xs={12} md={6} lg={4}>
+               <h3>
+                  <a href="/gallery">Crowns</a>
+               </h3>
+            </Col>
+            <Col xs={12} md={6} lg={4}>
+               <h3>
+                  <a href="/gallery">Bridges</a>
+               </h3>
+            </Col>
+            <Col xs={12} md={6} lg={4}>
+               <h3>
+                  <a href="/gallery">Dentures</a>
+               </h3>
+            </Col>
+            <Col xs={12} md={6} lg={4}>
+               <h3>
+                  <a href="/gallery">Retainers</a>
+               </h3>
+            </Col>
+            <Col xs={12} md={6} lg={4}>
+               <h3>
+                  <a href="/gallery">Veneers</a>
+               </h3>
+            </Col>
+            <Col xs={12} md={6} lg={4}>
+               <h3>
+                  <a href="/gallery">Cosmetic Dentistry</a>
+               </h3>
+            </Col>
+         </Row>
       </div>
    );
 };

@@ -1,6 +1,8 @@
 import React from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
+const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+
 const Footer = () => {
    const mapStyles = {
       height: "200px",
@@ -8,15 +10,13 @@ const Footer = () => {
    };
 
    const defaultCenter = {
-      lat: 53.01101831730467, // Replace with your business latitude
-      lng: -2.1832754268992574, // Replace with your business longitude
+      lat: 53.01101831730467,
+      lng: -2.1832754268992574,
    };
 
    return (
       <footer className="bg-dark text-white p-3 mt-5">
-         <LoadScript
-            googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}
-         >
+         <LoadScript googleMapsApiKey={apiKey}>
             <GoogleMap
                mapContainerStyle={mapStyles}
                zoom={16}

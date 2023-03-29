@@ -8,8 +8,41 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Welcome.css";
 import MyVideo from "../assets/video/jumbotron.mp4";
+import image1 from "../assets/img/testimonial1.jpg";
+import image2 from "../assets/img/testimonial3.jpg";
+import image3 from "../assets/img/testimonial4.jpg";
+
+const TestimonialCard = ({ name, img, quote }) => {
+   return (
+      <div className="testimonial-card position-relative">
+         <img className="testimonial-image" src={img} alt={name} />
+         <div className="testimonial-content position-absolute text-white d-flex flex-column justify-content-center align-items-center">
+            <h5 className="testimonial-name">{name}</h5>
+            <p className="testimonial-quote">{quote}</p>
+         </div>
+      </div>
+   );
+};
 
 const Welcome = () => {
+   const testimonials = [
+      {
+         name: "John Doe",
+         img: image1,
+         quote: "I had a fantastic experience at Alchemy Dental! The staff was friendly and professional. Highly recommended!",
+      },
+      {
+         name: "Jane Smith",
+         img: image2,
+         quote: "The dentist was very knowledgeable and took the time to explain everything. My new go-to dental clinic!",
+      },
+      {
+         name: "Mary Johnson",
+         img: image3,
+         quote: "Great service and very clean facilities. The whole family loves Alchemy Dental!",
+      },
+   ];
+
    return (
       <>
          <div className="video-jumbotron">
@@ -89,6 +122,17 @@ const Welcome = () => {
                      Contact Us
                   </Button>
                </Col>
+            </Row>
+            <Row className="mt-5">
+               {testimonials.map((testimonial, index) => (
+                  <Col key={index} md={4} className="mb-4">
+                     <TestimonialCard
+                        name={testimonial.name}
+                        img={testimonial.img}
+                        quote={testimonial.quote}
+                     />
+                  </Col>
+               ))}
             </Row>
          </Container>
       </>

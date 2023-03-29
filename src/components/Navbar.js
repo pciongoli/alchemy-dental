@@ -1,11 +1,14 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
+import "../styles/Navigation.css";
 
 const Navigation = () => {
    return (
       <Navbar bg="dark" variant="dark" expand="sm" className="flex-column">
          <div className="container">
-            <Navbar.Brand href="/">Alchemy Dental</Navbar.Brand>
+            <Navbar.Brand href="/" className="navbar-title">
+               Alchemy Dental
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                <Nav className="w-100 justify-content-end">

@@ -14,6 +14,10 @@
    color: #ccc;
 }
 
+.navbar-title {
+   font-size: 2rem; /* Change this value as needed */
+}
+
 /* Change the color of the brand text */
 .navbar-brand {
    color: #fff;

@@ -1,0 +1,29 @@
+.video-jumbotron {
+   position: relative;
+   width: 100%;
+   height: 80vh;
+   overflow: hidden;
+}
+
+#video-bg {
+   position: absolute;
+   width: 100%;
+   height: auto;
+   min-height: 100%;
+   object-fit: cover;
+   z-index: -1;
+}
+
+.video-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   text-align: center;
+}

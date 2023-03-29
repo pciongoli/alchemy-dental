@@ -49,10 +49,10 @@ const Welcome = () => {
             <video autoPlay muted loop id="video-bg">
                <source src={MyVideo} type="video/mp4" />
             </video>
-            <Container className="video-overlay">
+            <div className="video-overlay">
                <h1>Welcome to Alchemy Dental</h1>
                <p>Your smile, our passion.</p>
-            </Container>
+            </div>
          </div>
          <Container className="mt-5">
             <h2>About Alchemy Dental Lab</h2>
@@ -80,7 +80,7 @@ const Welcome = () => {
                that truly cares about your dental health, look no further than
                Alchemy Dental.
             </p>
-            <Row className="mt-4">
+            <Row className="mt-4 image-section">
                <Col xs={12} md={6}>
                   <Image
                      className="sample-image"
@@ -100,7 +100,7 @@ const Welcome = () => {
                   />
                </Col>
             </Row>
-            <Row className="mt-5 text-center">
+            <Row className="mt-5 text-center icon-section">
                <Col xs={12} md={4}>
                   <FontAwesomeIcon icon={faCommentDollar} size="3x" />
                   <h3>Request a Quote</h3>
@@ -123,7 +123,7 @@ const Welcome = () => {
                   </Button>
                </Col>
             </Row>
-            <Row className="mt-5">
+            <Row className="mt-5 mt-5 testimonial-section">
                {testimonials.map((testimonial, index) => (
                   <Col key={index} md={4} className="mb-4">
                      <TestimonialCard

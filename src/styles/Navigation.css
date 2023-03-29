@@ -1,0 +1,46 @@
+/* Change the background color of the navbar */
+.navbar {
+   background-color: #333;
+   height: 5rem;
+}
+
+/* Change the font color of nav links */
+.nav-link {
+   color: #fff;
+}
+
+/* Change the font color of nav links on hover */
+.nav-link:hover {
+   color: #ccc;
+}
+
+/* Change the color of the brand text */
+.navbar-brand {
+   color: #fff;
+}
+
+/* Change the color of the brand text on hover */
+.navbar-brand:hover {
+   color: #ccc;
+}
+/* Add space between nav links using Flexbox */
+.navbar .nav {
+   display: flex;
+   justify-content: space-between; /* Change to 'space-between' if you want the items to be spaced edge-to-edge */
+}
+
+/* Set a max-width for the nav container for responsiveness */
+.navbar .container {
+   max-width: 1200px;
+}
+
+/* For smaller screens, add some padding and set nav links to full width */
+@media (max-width: 768px) {
+   .navbar .nav {
+      padding: 0 15px;
+   }
+   .navbar .nav .nav-link {
+      flex-grow: 1;
+      text-align: center;
+   }
+}

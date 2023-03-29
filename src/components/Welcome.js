@@ -11,6 +11,8 @@ import MyVideo from "../assets/video/jumbotron.mp4";
 import image1 from "../assets/img/testimonial1.jpg";
 import image2 from "../assets/img/testimonial3.jpg";
 import image3 from "../assets/img/testimonial4.jpg";
+import image4 from "../assets/img/alfred.jpg";
+import image5 from "../assets/img/marc.jpg";
 
 const TestimonialCard = ({ name, img, quote }) => {
    return (
@@ -57,29 +59,55 @@ const Welcome = () => {
          </div>
          <Container className="mt-5">
             <h2>The Alchemy Way</h2>
-            <p>
-               Alchemy Dental is an implant driven laboratory that focuses on
-               exquisite dental artistry. Founder Alfred Haddad is a renowned
-               master ceramist and expert in the art and science of implant
-               dentistry.
-            </p>
-            <p>
-               Alfred Haddad, MDT graduated in 1974 from Dental Technology
-               Institute in Germany. Alfred has been restoring dental implants
-               since 1983. He began his journey by opening a lab in Lebanon with
-               his Father and three brothers who are also dental technicians.
-               Seeking greater opportunity, Alfred accepted a implant director
-               position at a Boutique lab in NYC. After 5 years, Alfred's
-               passion for dentistry led him to establish his very own
-               laboratory known as Alchemy Dental.
-            </p>
-            <p>
-               Alfred's passion is restoring full mouth implant cases and
-               working chairside on All On Four surgical conversions. For that
-               very reason, Alfred and his highly skilled team only cater to the
-               greater New York City area. This boutique approach allows for a
-               more personalized service with consistent quality.
-            </p>
+            <Row>
+               <Col xs={12} md={8}>
+                  <p>
+                     Alchemy Dental is an implant driven laboratory that focuses
+                     on exquisite dental artistry. Founder Alfred Haddad is a
+                     renowned master ceramist and expert in the art and science
+                     of implant dentistry.
+                  </p>
+                  <p>
+                     Alfred Haddad, MDT graduated in 1974 from Dental Technology
+                     Institute in Germany. Alfred has been restoring dental
+                     implants since 1983. He began his journey by opening a lab
+                     in Lebanon with his Father and three brothers who are also
+                     dental technicians. Seeking greater opportunity, Alfred
+                     accepted a implant director position at a Boutique lab in
+                     NYC. After 5 years, Alfred's passion for dentistry led him
+                     to establish his very own laboratory known as Alchemy
+                     Dental.
+                  </p>
+                  <p>
+                     Alfred's passion is restoring full mouth implant cases and
+                     working chairside on All On Four surgical conversions. For
+                     that very reason, Alfred and his highly skilled team only
+                     cater to the greater New York City area. This boutique
+                     approach allows for a more personalized service with
+                     consistent quality.
+                  </p>
+               </Col>
+               <Col
+                  xs={12}
+                  md={4}
+                  className="d-flex flex-column align-items-center"
+               >
+                  <Image
+                     src={image4}
+                     alt="Circular Image 1"
+                     className="circular-image mb-3"
+                  />
+                  <h5>Alfred Haddad, MDT</h5>
+                  <h6>Founder & Implant Specialist</h6>
+                  <Image
+                     src={image5}
+                     alt="Circular Image 2"
+                     className="circular-image"
+                  />
+                  <h5>Marc Haddad</h5>
+                  <h6>Dental Technician</h6>
+               </Col>
+            </Row>
             <Row className="mt-4 image-section">
                <Col xs={12} md={6}>
                   <Image

@@ -80,3 +80,11 @@
 .testimonial-section {
    margin-bottom: 100px;
 }
+
+.circular-image {
+   border-radius: 50%;
+   opacity: 0.9;
+   max-width: 100px;
+   height: auto;
+   margin-left: 15px;
+}

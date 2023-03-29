@@ -46,39 +46,39 @@ const Welcome = () => {
    return (
       <>
          <div className="video-jumbotron">
-            <video autoPlay muted loop id="video-bg">
+            <video autoPlay muted loop id="video-bg" playsInline>
                <source src={MyVideo} type="video/mp4" />
             </video>
+
             <div className="video-overlay">
                <h1>Welcome to Alchemy Dental</h1>
                <p>Your smile, our passion.</p>
             </div>
          </div>
          <Container className="mt-5">
-            <h2>About Alchemy Dental Lab</h2>
+            <h2>The Alchemy Way</h2>
             <p>
-               At Alchemy Dental, we are dedicated to creating high-quality
-               dental restorations that meet the unique needs of each patient.
-               Our family-run lab has been serving the Teaneck, NJ community for
-               years, and we take pride in our commitment to excellence in every
-               aspect of our work.
+               Alchemy Dental is an implant driven laboratory that focuses on
+               exquisite dental artistry. Founder Alfred Haddad is a renowned
+               master ceramist and expert in the art and science of implant
+               dentistry.
             </p>
             <p>
-               Our team of experienced technicians uses the latest techniques
-               and materials to create dental crowns, bridges, and other
-               restorations that look and feel natural. We believe that
-               communication and collaboration are key to achieving the best
-               results for our patients, and we work closely with dentists and
-               other dental professionals to ensure that our restorations meet
-               their exact specifications.
+               Alfred Haddad, MDT graduated in 1974 from Dental Technology
+               Institute in Germany. Alfred has been restoring dental implants
+               since 1983. He began his journey by opening a lab in Lebanon with
+               his Father and three brothers who are also dental technicians.
+               Seeking greater opportunity, Alfred accepted a implant director
+               position at a Boutique lab in NYC. After 5 years, Alfred's
+               passion for dentistry led him to establish his very own
+               laboratory known as Alchemy Dental.
             </p>
             <p>
-               At Alchemy Dental, we understand that dental restorations are an
-               important investment in your health and well-being. That's why we
-               strive to provide personalized service and attention to every
-               patient, from start to finish. If you're looking for a dental lab
-               that truly cares about your dental health, look no further than
-               Alchemy Dental.
+               Alfred's passion is restoring full mouth implant cases and
+               working chairside on All On Four surgical conversions. For that
+               very reason, Alfred and his highly skilled team only cater to the
+               greater New York City area. This boutique approach allows for a
+               more personalized service with consistent quality.
             </p>
             <Row className="mt-4 image-section">
                <Col xs={12} md={6}>

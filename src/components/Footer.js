@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import "../styles/Footer.css";
 
 const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
@@ -19,6 +19,10 @@ const Footer = () => {
       lng: -2.1832754268992574,
    };
 
+   const handleMarkerClick = () => {
+      window.open("https://goo.gl/maps/BYwGxnNyvugL2hfbA", "_blank");
+   };
+
    return (
       <>
          <footer className="bg-dark text-white p-3 mt-5">
@@ -28,7 +32,13 @@ const Footer = () => {
                   mapContainerStyle={mapStyles}
                   zoom={16}
                   center={defaultCenter}
-               />
+               >
+                  <Marker
+                     position={defaultCenter}
+                     title="Alchemy Dental"
+                     onClick={handleMarkerClick} // Add onClick event
+                  />
+               </GoogleMap>
             </LoadScript>
             <br></br>
             <div className="container">

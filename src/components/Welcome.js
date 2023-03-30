@@ -58,7 +58,7 @@ const Welcome = () => {
             </div>
          </div>
          <Container className="mt-5">
-            <h2>The Alchemy Way</h2>
+            <h2 className="alchemy-way-title">The Alchemy Way</h2>
             <Row>
                <Col xs={12} md={8}>
                   <p>

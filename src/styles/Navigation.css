@@ -38,6 +38,22 @@
    max-width: 1200px;
 }
 
+.thin-bar {
+   background-color: #f8f9fa; /* Use any desired background color */
+   padding: 1px 0;
+}
+
+.social-icon {
+   color: #333; /* Use any desired icon color */
+   font-size: 18px;
+   margin-left: 10px;
+   text-decoration: none;
+}
+
+.social-icon:hover {
+   color: #007bff; /* Use any desired hover color */
+}
+
 /* For smaller screens, add some padding and set nav links to full width */
 @media (max-width: 768px) {
    .navbar .nav {

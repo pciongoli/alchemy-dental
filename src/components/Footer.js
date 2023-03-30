@@ -26,7 +26,7 @@ const Footer = () => {
          </LoadScript>
          <br></br>
          <div className="container">
-            <p className="footer-p">Phone: (123) 456-7890</p>
+            <p className="footer-p">Phone: (201) 836-8878</p>
             <p className="footer-p"> Email: alchemydental@gmail.com</p>
             <p className="footer-p">
                Address: 300 Queen Anne Road, Teaneck, New Jersey 07631

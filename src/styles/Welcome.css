@@ -88,3 +88,6 @@
    height: auto;
    margin-left: 15px;
 }
+.alchemy-way-title {
+   font-weight: bold; /* Or use a numeric value like 700 or 800 */
+}

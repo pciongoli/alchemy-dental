@@ -4,3 +4,8 @@
    margin-left: 20px; /* Increase this value to add more space between icons */
    text-decoration: none;
 }
+
+.map-image {
+   max-width: 100%;
+   height: auto;
+}

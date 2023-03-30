@@ -1,0 +1,39 @@
+/* UploadCase.css */
+
+h2 {
+   text-align: center;
+   margin-bottom: 2rem;
+   font-size: 2rem;
+   color: #333;
+}
+
+.card {
+   margin-bottom: 1rem;
+   border-color: #ccc;
+}
+
+.card-header {
+   background-color: #f8f9fa;
+   font-weight: 600;
+   cursor: pointer;
+   color: #333;
+}
+
+.card-body {
+   background-color: #ffffff;
+   color: #333;
+   font-size: 1rem;
+}
+
+.accordion {
+   border-top: 1px solid #ccc;
+}
+
+.accordion > .card:not(:last-of-type) {
+   border-bottom: 1px solid #ccc;
+}
+
+.accordion .card-header.collapsed {
+   background-color: #e9ecef;
+   color: #212529;
+}

@@ -1,7 +1,8 @@
 /* Change the background color of the navbar */
-.navbar {
+.navigation {
    background-color: #333;
    height: 5rem;
+   z-index: 1000;
 }
 
 /* Change the font color of nav links */
@@ -38,29 +39,26 @@
    max-width: 1200px;
 }
 
-.thin-bar {
-   background-color: #f8f9fa; /* Use any desired background color */
-   padding: 1px 0;
-}
-
-.social-icon {
-   color: #333; /* Use any desired icon color */
-   font-size: 18px;
-   margin-left: 10px;
-   text-decoration: none;
-}
-
-.social-icon:hover {
-   color: #007bff; /* Use any desired hover color */
-}
-
 /* For smaller screens, add some padding and set nav links to full width */
-@media (max-width: 768px) {
+@media (max-width: 991.98px) {
    .navbar .nav {
       padding: 0 15px;
    }
    .navbar .nav .nav-link {
       flex-grow: 1;
       text-align: center;
+   }
+}
+
+/* Custom styles for smaller screens */
+@media (max-width: 991.98px) {
+   .navbar .navbar-collapse {
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      right: 0;
+      top: 100%;
+      width: auto;
+      z-index: 1000;
+      margin-right: 10px; /* Adjust this value as needed */
    }
 }

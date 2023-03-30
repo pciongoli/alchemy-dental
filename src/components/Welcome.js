@@ -13,6 +13,7 @@ import image2 from "../assets/img/testimonial3.jpg";
 import image3 from "../assets/img/testimonial4.jpg";
 import image4 from "../assets/img/alfred.jpg";
 import image5 from "../assets/img/marc.jpg";
+import { Link } from "react-router-dom";
 
 const TestimonialCard = ({ name, img, quote }) => {
    return (
@@ -139,7 +140,7 @@ const Welcome = () => {
                <Col xs={12} md={4}>
                   <FontAwesomeIcon icon={faBoxOpen} size="3x" />
                   <h3>Send a Case</h3>
-                  <Button href="/send-case" variant="primary">
+                  <Button as={Link} to="/send-case" variant="primary">
                      Send a Case
                   </Button>
                </Col>

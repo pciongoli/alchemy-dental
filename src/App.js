@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
+import UploadCase from "./components/UploadCase";
 
 function App() {
    return (
@@ -18,6 +19,7 @@ function App() {
                <Route path="/services" element={<Services />} />
                <Route path="/contact" element={<Contact />} />
                <Route path="/gallery" element={<Gallery />} />
+               <Route path="/send-case" element={UploadCase} />
             </Routes>
             <Footer />
          </div>

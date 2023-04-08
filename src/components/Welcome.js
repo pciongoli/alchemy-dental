@@ -140,7 +140,7 @@ const Welcome = () => {
                <Col xs={12} md={4}>
                   <FontAwesomeIcon icon={faBoxOpen} size="3x" />
                   <h3>Send a Case</h3>
-                  <Button as={Link} to="/send-case" variant="primary">
+                  <Button as={Link} to="/upload-case" variant="primary">
                      Send a Case
                   </Button>
                </Col>

@@ -1,43 +1,39 @@
 import React from "react";
-import { Container, Accordion, Card } from "react-bootstrap";
+import { Container, ListGroup } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/UploadCase.css";
 
 const UploadCase = () => {
-   const accordionData = [
+   const listData = [
       {
-         title: "Accordion Item 1",
-         content: "Content for Accordion Item 1",
+         title: "List Item 1",
+         content: "Content for List Item 1",
       },
       {
-         title: "Accordion Item 2",
-         content: "Content for Accordion Item 2",
+         title: "List Item 2",
+         content: "Content for List Item 2",
       },
       {
-         title: "Accordion Item 3",
-         content: "Content for Accordion Item 3",
+         title: "List Item 3",
+         content: "Content for List Item 3",
       },
       {
-         title: "Accordion Item 4",
-         content: "Content for Accordion Item 4",
+         title: "List Item 4",
+         content: "Content for List Item 4",
       },
    ];
 
    return (
       <Container>
          <h2>How to Upload a Case</h2>
-         <Accordion>
-            {accordionData.map((item, index) => (
-               <Card key={index}>
-                  <Accordion.Toggle as={Card.Header} eventKey={`${index}`}>
-                     {item.title}
-                  </Accordion.Toggle>
-                  <Accordion.Collapse eventKey={`${index}`}>
-                     <Card.Body>{item.content}</Card.Body>
-                  </Accordion.Collapse>
-               </Card>
+         <ListGroup>
+            {listData.map((item, index) => (
+               <ListGroup.Item key={index}>
+                  <h5>{item.title}</h5>
+                  <p>{item.content}</p>
+               </ListGroup.Item>
             ))}
-         </Accordion>
+         </ListGroup>
       </Container>
    );
 };

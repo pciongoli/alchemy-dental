@@ -19,7 +19,7 @@ function App() {
                <Route path="/services" element={<Services />} />
                <Route path="/contact" element={<Contact />} />
                <Route path="/gallery" element={<Gallery />} />
-               <Route path="/send-case" element={UploadCase} />
+               <Route path="/upload-case" element={<UploadCase />} />
             </Routes>
             <Footer />
          </div>

@@ -4,6 +4,7 @@
 
 .gallery-container h2 {
    margin-bottom: 2rem;
+   text-align: center;
 }
 
 .gallery-image {
@@ -12,4 +13,13 @@
    max-height: 200px;
    object-fit: cover;
    margin-bottom: 1rem;
+   cursor: pointer;
+   transition: transform 0.3s ease-in-out;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   display: block;
+}
+
+.gallery-image:hover {
+   transform: scale(1.1);
+   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }

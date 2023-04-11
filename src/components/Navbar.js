@@ -9,7 +9,12 @@ const Navigation = () => {
          <Navbar bg="dark" variant="dark" expand="lg" className="navigation">
             <div className="container">
                <Navbar.Brand href="/">Alchemy Dental</Navbar.Brand>
-               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            </div>
+            <Navbar.Toggle
+               aria-controls="responsive-navbar-nav"
+               className="navbar-toggle"
+            />
+            <div className="container-right">
                <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="ml-auto">
                      <Nav.Link href="/">Welcome</Nav.Link>

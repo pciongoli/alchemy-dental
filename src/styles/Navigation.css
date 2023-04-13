@@ -3,6 +3,9 @@
    background-color: #000;
    height: 5rem;
    z-index: 1000;
+   position: fixed;
+   top: 0;
+   width: 100%;
 }
 
 /* Change the font color of nav links */

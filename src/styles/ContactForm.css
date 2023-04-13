@@ -1,4 +1,8 @@
 /* src/styles/ContactForm.css */
+.contact-title {
+   padding-top: 40px;
+}
+
 .contact-form {
    max-width: 600px;
    margin: 0 auto;

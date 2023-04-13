@@ -38,7 +38,9 @@ const Contact = () => {
 
    return (
       <div className="container mt-5">
-         <h1>Contact Us</h1>
+         <div className="contact-title">
+            <h1>Contact Us</h1>
+         </div>
          <form className="contact-form" onSubmit={handleSubmit}>
             <input
                type="text"

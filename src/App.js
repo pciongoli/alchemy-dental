@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 import UploadCase from "./components/UploadCase";
+import RequestQuote from "./components/RequestQuote";
 
 function App() {
    return (
@@ -17,6 +18,7 @@ function App() {
             <Routes>
                <Route path="/" element={<Welcome />} />
                <Route path="/services" element={<Services />} />
+               <Route path="/quote" element={<RequestQuote />} />
                <Route path="/contact" element={<Contact />} />
                <Route path="/gallery" element={<Gallery />} />
                <Route path="/upload-case" element={<UploadCase />} />

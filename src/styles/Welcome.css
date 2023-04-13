@@ -81,6 +81,11 @@
    margin-bottom: 100px;
 }
 
+.icon-section > div {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
 .testimonial-section {
    margin-bottom: 10px;
 }

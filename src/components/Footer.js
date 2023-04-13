@@ -16,6 +16,7 @@ const defaultCenter = {
 const mapStyles = {
    height: "200px",
    width: "100%",
+   maxWidth: "800px", // Set a maximum width for the map
 };
 
 const MapWithMarker = () => {
@@ -43,17 +44,19 @@ const MapWithMarker = () => {
 const Footer = () => {
    return (
       <>
-         <footer className="bg-dark text-white p-3 mt-5">
+         <footer className=" text-white p-3 mt-5">
             <br></br>
             <LoadScript googleMapsApiKey={apiKey}>
-               <GoogleMap
-                  id="footer-map"
-                  mapContainerStyle={mapStyles}
-                  zoom={16}
-                  center={defaultCenter}
-               >
-                  <MapWithMarker />
-               </GoogleMap>
+               <div className="map-container d-flex justify-content-center">
+                  <GoogleMap
+                     id="footer-map"
+                     mapContainerStyle={mapStyles}
+                     zoom={16}
+                     center={defaultCenter}
+                  >
+                     <MapWithMarker />
+                  </GoogleMap>
+               </div>
             </LoadScript>
             <br></br>
             <div className="container">

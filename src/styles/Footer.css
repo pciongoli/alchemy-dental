@@ -4,3 +4,16 @@
    margin-left: 20px; /* Increase this value to add more space between icons */
    text-decoration: none;
 }
+
+footer {
+   background-color: #000;
+}
+
+.map-container {
+   margin: 0 auto; /* Center the map container */
+}
+
+p {
+   margin-bottom: 0.5rem;
+   text-align: center;
+}

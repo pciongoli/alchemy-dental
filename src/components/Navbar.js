@@ -1,14 +1,16 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-
+import logo from "../assets/img/logo.png";
 import "../styles/Navigation.css";
 
 const Navigation = () => {
    return (
       <>
-         <Navbar bg="dark" variant="dark" expand="lg" className="navigation">
+         <Navbar variant="dark" expand="lg" className="navigation">
             <div className="container">
-               <Navbar.Brand href="/">Alchemy Dental</Navbar.Brand>
+               <Navbar.Brand href="/">
+                  <img src={logo} alt="Alchemy Dental" className="brand-logo" />
+               </Navbar.Brand>
             </div>
             <Navbar.Toggle
                aria-controls="responsive-navbar-nav"

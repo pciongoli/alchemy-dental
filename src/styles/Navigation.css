@@ -1,11 +1,16 @@
 /* Change the background color of the navbar */
+
 .navigation {
    background-color: #000;
-   height: 5rem;
+   height: auto; /* Change to auto so the height adjusts to the content */
+   min-height: 5rem; /* Set a minimum height to maintain the original height if the content is smaller */
    z-index: 1000;
-   position: fixed;
-   top: 0;
-   width: 100%;
+   padding: 0;
+}
+
+.brand-logo {
+   height: 7rem; /* Adjust the height of the image */
+   width: auto; /* Maintain the aspect ratio */
 }
 
 /* Change the font color of nav links */

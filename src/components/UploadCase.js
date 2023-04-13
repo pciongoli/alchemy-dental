@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, ListGroup } from "react-bootstrap";
+import { Container, ListGroup, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/UploadCase.css";
+import CaseBrand from "../assets/img/case-brand.jpg";
 
 const UploadCase = () => {
    const listData = [
@@ -80,6 +81,7 @@ const UploadCase = () => {
             SironaCEREC®, the Align Technology iTero™, Carestream, E4D-Planmeca,
             3M Tm True Definition Scanner, and 3Shapes TRIOS®
          </h6>
+         <Image src={CaseBrand} alt="Case-Brand" className=" mb-3" />
          <ListGroup>
             {listData.map((item, index) => (
                <ListGroup.Item key={index}>
